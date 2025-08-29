@@ -2,3 +2,94 @@ html, body { margin:0; padding:0; font-family: ui-sans-serif, system-ui, -apple-
 a { color: #0070f3; text-decoration: none; }
 button { padding: 8px 12px; border: 1px solid #ddd; border-radius: 8px; background: white; cursor: pointer; }
 input[type="text"], input[type="email"] { border: 1px solid #ddd; border-radius: 8px; padding: 8px; }
+
+
+/* Navigation bar styling */
+header {
+  background-color: #202020;
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  border-bottom: 1px solid #444;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+header a:hover {
+  color: #ff6b6b;
+}
+
+/* Main content area */
+main {
+  max-width: 720px !important;
+  margin: 0 auto !important;
+  padding: 16px !important;
+}
+
+/* Post card styling */
+.post-card {
+  border: 1px solid #333;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.post-card p {
+  padding: 12px;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.post-card img,
+.post-card video {
+  width: 100%;
+  display: block;
+}
+
+.like-button {
+  margin: 8px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: #333;
+  color: #eee;
+  cursor: pointer;
+}
+
+.like-button:hover {
+  background: #555;
+}
+
+.like-button.liked {
+  background: #ff6b6b;
+  color: #fff;
+}
+
+/* Move the login link to the right */
+header a:last-child {
+  margin-left: auto;
+}
+
+/* Ensure inputs and buttons have consistent styling */
+input[type="text"], input[type="email"] {
+  border-radius: 4px;
+  padding: 8px;
+}
+
+button {
+  background-color: #202020;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
+}
